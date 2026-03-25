@@ -1,0 +1,26 @@
+import type { IApiResponse } from '@ai-first/shared-types'
+import { createApiResponse } from '@ai-first/shared-utils'
+import type { Create<%= className %>UseCase } from '../../application/use-cases/create-<%= fileName %>.use-case.js'
+import type { Get<%= className %>UseCase } from '../../application/use-cases/get-<%= fileName %>.use-case.js'
+import type { Create<%= className %>Dto } from '../../application/dtos/create-<%= fileName %>.dto.js'
+import type { I<%= className %> } from '../../domain/entities/<%= fileName %>.entity.js'
+
+// @Controller('<%= fileName %>s')
+export class <%= className %>Controller {
+  constructor(
+    private readonly create<%= className %>UseCase: Create<%= className %>UseCase,
+    private readonly get<%= className %>UseCase: Get<%= className %>UseCase,
+  ) {}
+
+  // @Post()
+  async create(dto: Create<%= className %>Dto): Promise<IApiResponse<I<%= className %>>> {
+    const entity = await this.create<%= className %>UseCase.execute(dto)
+    return createApiResponse(entity)
+  }
+
+  // @Get(':id')
+  async findOne(id: string): Promise<IApiResponse<I<%= className %>>> {
+    const entity = await this.get<%= className %>UseCase.execute(id)
+    return createApiResponse(entity)
+  }
+}

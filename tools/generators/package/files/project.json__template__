@@ -1,0 +1,5 @@
+{
+  "name": "<%= name %>",
+  "tags": <%= tags %>,
+  "targets": {}
+}

@@ -1,0 +1,30 @@
+# Feature: <%= className %>
+
+Created: <%= date %>
+Status: Draft
+
+## Problem Statement
+
+<!-- What problem does this feature solve? -->
+
+## Proposed Solution
+
+<!-- High-level description of the solution -->
+
+## Acceptance Criteria
+
+- [ ] <!-- Criterion 1 -->
+- [ ] <!-- Criterion 2 -->
+- [ ] <!-- Criterion 3 -->
+
+## Scope
+
+### In Scope
+- <!-- Item 1 -->
+
+### Out of Scope
+- <!-- Item 1 -->
+
+## Technical Considerations
+
+<!-- Architecture decisions, dependencies, risks -->

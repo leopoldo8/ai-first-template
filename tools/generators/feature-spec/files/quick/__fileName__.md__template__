@@ -1,0 +1,17 @@
+# Quick Task: <%= className %>
+
+Created: <%= date %>
+Status: TODO
+
+## Objective
+
+<!-- Describe what needs to be done -->
+
+## Acceptance Criteria
+
+- [ ] <!-- Criterion 1 -->
+- [ ] <!-- Criterion 2 -->
+
+## Files to Modify
+
+- <!-- file path -->

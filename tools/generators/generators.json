@@ -1,0 +1,19 @@
+{
+  "generators": {
+    "bounded-context": {
+      "factory": "./bounded-context/index",
+      "schema": "./bounded-context/schema.json",
+      "description": "Creates a new bounded context with Clean Architecture layers"
+    },
+    "package": {
+      "factory": "./package/index",
+      "schema": "./package/schema.json",
+      "description": "Creates a new shared package with AI-first configs"
+    },
+    "feature-spec": {
+      "factory": "./feature-spec/index",
+      "schema": "./feature-spec/schema.json",
+      "description": "Creates a new TLC feature specification"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+import type { IEntity, ITimestamped } from '@ai-first/shared-types'
+
+export interface I<%= className %> extends IEntity, ITimestamped {
+  // Add domain properties here
+  readonly name: string
+}
+
+export function create<%= className %>(params: {
+  readonly id: string
+  readonly name: string
+}): I<%= className %> {
+  return {
+    id: params.id,
+    name: params.name,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  }
+}

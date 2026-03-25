@@ -1,8 +1,15 @@
 {
-  "name": "@org/source",
+  "name": "@ai-first/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test",
+    "lint": "nx run-many -t lint",
+    "typecheck": "nx run-many -t typecheck",
+    "affected:test": "nx affected -t test",
+    "affected:lint": "nx affected -t lint"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
@@ -16,6 +23,7 @@
     "typescript": "~5.9.2"
   },
   "workspaces": [
+    "apps/*",
     "packages/*"
   ]
 }

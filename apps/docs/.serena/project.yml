@@ -1,0 +1,12 @@
+name: docs
+languages:
+  - typescript
+  - markdown
+ignored_paths:
+  - node_modules
+  - dist
+  - build
+initial_prompt: |
+  Documentation site for the AI-First Template.
+  Standalone app with no dependencies on other packages.
+  Documentation written in Markdown.

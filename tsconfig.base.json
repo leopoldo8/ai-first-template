@@ -16,6 +16,12 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@org/source"]
+    "customConditions": ["@ai-first/source"],
+    "paths": {
+      "@ai-first/shared-types": ["packages/shared-types/src/index.ts"],
+      "@ai-first/shared-utils": ["packages/shared-utils/src/index.ts"],
+      "@ai-first/ui": ["packages/ui/src/index.ts"],
+      "@ai-first/config": ["packages/config/src/index.ts"]
+    }
   }
 }

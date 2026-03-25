@@ -1,0 +1,11 @@
+name: ui
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  Shared UI component library.
+  Depends on: @ai-first/shared-types, @ai-first/shared-utils.
+  Components in PascalCase folders. Props interfaces use I prefix.
+  All props must be readonly.

@@ -1,0 +1,11 @@
+name: shared-utils
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  Shared utility functions package.
+  Depends on: @ai-first/shared-types only.
+  All functions must be pure with explicit return types.
+  Uses Result type for fallible operations.

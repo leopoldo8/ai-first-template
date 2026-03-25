@@ -1,0 +1,31 @@
+# Design: <%= className %>
+
+Created: <%= date %>
+
+## Architecture
+
+<!-- Describe the architectural approach -->
+
+## Data Model
+
+<!-- Entity changes, new tables, etc. -->
+
+## API Changes
+
+<!-- New endpoints, modified endpoints -->
+
+## Component Design
+
+<!-- For frontend features -->
+
+## Dependencies
+
+<!-- Cross-package dependencies -->
+
+## Security Considerations
+
+<!-- Auth, validation, data access -->
+
+## Performance Considerations
+
+<!-- Caching, query optimization, etc. -->

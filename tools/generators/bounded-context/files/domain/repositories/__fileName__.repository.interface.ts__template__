@@ -1,0 +1,10 @@
+import type { I<%= className %> } from '../entities/<%= fileName %>.entity.js'
+
+export interface I<%= className %>Repository {
+  findById(id: string): Promise<I<%= className %> | null>
+  findAll(): Promise<readonly I<%= className %>[]>
+  save(entity: I<%= className %>): Promise<I<%= className %>>
+  delete(id: string): Promise<void>
+}
+
+export const <%= className.toUpperCase() %>_REPOSITORY_TOKEN = 'I<%= className %>Repository'

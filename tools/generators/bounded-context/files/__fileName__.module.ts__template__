@@ -1,0 +1,4 @@
+// Uncomment when NestJS is installed
+// import { Module } from '@nestjs/common'
+
+export class <%= className %>Module {}

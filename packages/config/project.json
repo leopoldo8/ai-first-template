@@ -1,0 +1,5 @@
+{
+  "name": "config",
+  "tags": ["scope:shared", "type:config"],
+  "targets": {}
+}

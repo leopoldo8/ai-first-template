@@ -1,0 +1,7 @@
+// Add class-validator decorators when installed
+// import { IsString } from 'class-validator'
+
+export class Create<%= className %>Dto {
+  // @IsString()
+  readonly name!: string
+}

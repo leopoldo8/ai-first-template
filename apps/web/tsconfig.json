@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "jsx": "preserve",
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "plugins": [{ "name": "next" }]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "next-env.d.ts"],
+  "references": [
+    { "path": "../../packages/shared-types" },
+    { "path": "../../packages/shared-utils" },
+    { "path": "../../packages/ui" }
+  ]
+}

@@ -1,0 +1,11 @@
+name: shared-types
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  Shared TypeScript type definitions package.
+  LEAF dependency — imports nothing from monorepo.
+  All interfaces use I prefix, types use T prefix, enums use E prefix.
+  All properties must be readonly for immutability.

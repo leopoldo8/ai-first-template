@@ -1,0 +1,12 @@
+name: api
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  NestJS API with Clean Architecture and DDD bounded contexts.
+  Each bounded context has 4 layers: Domain, Application, Infrastructure, Presentation.
+  Domain has ZERO framework dependencies.
+  Dependency flow: Presentation -> Application -> Domain <- Infrastructure.
+  Read the bounded context's domain layer first to understand the business logic.

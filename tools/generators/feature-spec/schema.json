@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "id": "feature-spec",
+  "title": "Feature Spec Generator",
+  "description": "Creates a new TLC feature spec",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the feature",
+      "x-prompt": "What is the name of the feature?"
+    },
+    "size": {
+      "type": "string",
+      "description": "Feature size determines which files are generated",
+      "default": "medium",
+      "enum": ["small", "medium", "large"],
+      "x-prompt": {
+        "message": "What is the feature size?",
+        "type": "list",
+        "items": [
+          { "value": "small", "label": "Small (<=3 files, quick task only)" },
+          { "value": "medium", "label": "Medium (<10 tasks, spec + tasks)" },
+          { "value": "large", "label": "Large (full spec + design + tasks)" }
+        ]
+      }
+    }
+  },
+  "required": ["name"]
+}

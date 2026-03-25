@@ -1,0 +1,9 @@
+name: <%= name %>
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  Shared package: <%= scopedName %>.
+  Check CLAUDE.md for dependency rules.

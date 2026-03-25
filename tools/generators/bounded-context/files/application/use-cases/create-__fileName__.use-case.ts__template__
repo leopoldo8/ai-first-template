@@ -1,0 +1,19 @@
+import type { I<%= className %> } from '../../domain/entities/<%= fileName %>.entity.js'
+import type { I<%= className %>Repository } from '../../domain/repositories/<%= fileName %>.repository.interface.js'
+import type { Create<%= className %>Dto } from '../dtos/create-<%= fileName %>.dto.js'
+import { create<%= className %> } from '../../domain/entities/<%= fileName %>.entity.js'
+import { generateId } from '@ai-first/shared-utils'
+
+export class Create<%= className %>UseCase {
+  constructor(
+    private readonly <%= propertyName %>Repository: I<%= className %>Repository,
+  ) {}
+
+  async execute(dto: Create<%= className %>Dto): Promise<I<%= className %>> {
+    const entity = create<%= className %>({
+      id: generateId(),
+      name: dto.name,
+    })
+    return this.<%= propertyName %>Repository.save(entity)
+  }
+}

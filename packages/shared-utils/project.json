@@ -1,0 +1,5 @@
+{
+  "name": "shared-utils",
+  "tags": ["scope:shared", "type:utils"],
+  "targets": {}
+}

@@ -1,0 +1,23 @@
+project_name: "ai-first-template"
+languages:
+  - typescript
+encoding: "utf-8"
+ignore_all_files_in_gitignore: true
+ignored_paths:
+  - "node_modules/**"
+  - "dist/**"
+  - ".nx/**"
+  - "coverage/**"
+  - "*.lock"
+excluded_tools: []
+included_optional_tools: []
+initial_prompt: |
+  This is an NX monorepo using Clean Architecture and TLC Spec-Driven Development.
+  Key entry points:
+  - CLAUDE.md (root) for Claude Code instructions
+  - .specs/project/PROJECT.md for architecture principles
+  - Each app/package has its own CLAUDE.md and .serena/project.yml
+  - docs/index.md for documentation navigation
+  Use progressive disclosure: start with root files, drill into packages as needed.
+read_only_memory_patterns: []
+ignored_memory_patterns: []

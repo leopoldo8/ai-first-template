@@ -6,7 +6,11 @@
       "sharedGlobals"
     ],
     "production": [
-      "default"
+      "default",
+      "!{projectRoot}/**/*.spec.ts",
+      "!{projectRoot}/**/*.int-spec.ts",
+      "!{projectRoot}/**/*.e2e-spec.ts",
+      "!{projectRoot}/**/__tests__/**/*"
     ],
     "sharedGlobals": []
   },
@@ -26,6 +30,21 @@
       }
     }
   ],
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["build-deps"],
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "typecheck": {
+      "cache": true
+    }
+  },
   "nxCloudId": "69c210e070edb41546d87a86",
   "analytics": false
 }

@@ -1,0 +1,24 @@
+import type { I<%= className %> } from '../../domain/entities/<%= fileName %>.entity.js'
+import type { I<%= className %>Repository } from '../../domain/repositories/<%= fileName %>.repository.interface.js'
+
+// In-memory implementation -- replace with TypeORM when installed
+export class TypeOrm<%= className %>Repository implements I<%= className %>Repository {
+  private readonly store: Map<string, I<%= className %>> = new Map()
+
+  async findById(id: string): Promise<I<%= className %> | null> {
+    return this.store.get(id) ?? null
+  }
+
+  async findAll(): Promise<readonly I<%= className %>[]> {
+    return [...this.store.values()]
+  }
+
+  async save(entity: I<%= className %>): Promise<I<%= className %>> {
+    this.store.set(entity.id, entity)
+    return entity
+  }
+
+  async delete(id: string): Promise<void> {
+    this.store.delete(id)
+  }
+}

@@ -1,0 +1,10 @@
+name: config
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+initial_prompt: |
+  Shared configuration package.
+  LEAF dependency — imports nothing from monorepo.
+  Exports immutable configuration objects.

@@ -1,0 +1,52 @@
+# AI-First Template Repository
+
+> NX monorepo template with Clean Architecture, TLC Spec-Driven Development,
+> Serena MCP integration, and 4-layer progressive disclosure documentation.
+> Optimized for Claude Code.
+
+## AI Instructions
+
+- [CLAUDE.md](CLAUDE.md): Root Claude Code instructions
+- [.specs/project/PROJECT.md](.specs/project/PROJECT.md): Non-negotiable architecture principles
+- [.specs/project/ROADMAP.md](.specs/project/ROADMAP.md): Feature milestones and phases
+- [.specs/project/STATE.md](.specs/project/STATE.md): Persistent memory across sessions
+
+## Apps
+
+- [apps/web/CLAUDE.md](apps/web/CLAUDE.md): Next.js frontend — App Router, Clean Architecture
+- [apps/api/CLAUDE.md](apps/api/CLAUDE.md): NestJS backend — Clean Architecture, DDD bounded contexts
+- [apps/docs/CLAUDE.md](apps/docs/CLAUDE.md): Documentation site
+
+## Packages
+
+- [packages/shared-types/CLAUDE.md](packages/shared-types/CLAUDE.md): Shared TypeScript types (leaf)
+- [packages/shared-utils/CLAUDE.md](packages/shared-utils/CLAUDE.md): Shared utility functions
+- [packages/ui/CLAUDE.md](packages/ui/CLAUDE.md): Shared UI component library
+- [packages/config/CLAUDE.md](packages/config/CLAUDE.md): Shared ESLint, TSConfig, Prettier configs
+
+## Architecture
+
+- [docs/architecture/overview.md](docs/architecture/overview.md): System design overview
+- [docs/architecture/clean-architecture.md](docs/architecture/clean-architecture.md): Clean Architecture guide
+- [docs/architecture/dependency-graph.md](docs/architecture/dependency-graph.md): Package dependencies
+- [docs/architecture/data-flow.md](docs/architecture/data-flow.md): Data flow patterns
+
+## Guides
+
+- [docs/guides/getting-started.md](docs/guides/getting-started.md): Setup and first steps
+- [docs/guides/adding-a-bounded-context.md](docs/guides/adding-a-bounded-context.md): Add new domain module
+- [docs/guides/adding-a-package.md](docs/guides/adding-a-package.md): Add new shared package
+- [docs/guides/ai-workflow.md](docs/guides/ai-workflow.md): Brainstorm -> Spec -> Plan -> Execute
+- [docs/guides/spec-driven-workflow.md](docs/guides/spec-driven-workflow.md): TLC .specs/ usage
+
+## Concepts
+
+- [docs/concepts/progressive-disclosure.md](docs/concepts/progressive-disclosure.md): 4-layer documentation
+- [docs/concepts/ai-first-principles.md](docs/concepts/ai-first-principles.md): AI-first design
+- [docs/concepts/spec-driven-development.md](docs/concepts/spec-driven-development.md): TLC SDD
+
+## Operations
+
+- [docs/runbooks/deploy.md](docs/runbooks/deploy.md): Deployment procedures
+- [docs/runbooks/rollback.md](docs/runbooks/rollback.md): Rollback procedures
+- [docs/runbooks/incident-response.md](docs/runbooks/incident-response.md): Incident handling

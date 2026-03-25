@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "tags": ["scope:web", "type:app"],
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "web:build",
+        "dev": true
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/web"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "apps/web/jest.config.ts"
+      }
+    }
+  }
+}

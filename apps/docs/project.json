@@ -1,0 +1,5 @@
+{
+  "name": "docs",
+  "tags": ["scope:docs", "type:app"],
+  "targets": {}
+}

@@ -1,0 +1,12 @@
+name: web
+languages:
+  - typescript
+ignored_paths:
+  - node_modules
+  - dist
+  - .next
+initial_prompt: |
+  Next.js frontend with Clean Architecture.
+  Features organized in src/features/<name>/.
+  Server Components by default. Use Server Actions for mutations.
+  Imports from: @ai-first/shared-types, @ai-first/shared-utils, @ai-first/ui.

@@ -1,0 +1,5 @@
+{
+  "name": "shared-types",
+  "tags": ["scope:shared", "type:types"],
+  "targets": {}
+}

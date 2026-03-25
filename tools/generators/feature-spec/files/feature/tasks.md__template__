@@ -1,0 +1,18 @@
+# Tasks: <%= className %>
+
+## Implementation Tasks
+
+- [ ] Task 1: <!-- Description -->
+- [ ] Task 2: <!-- Description -->
+- [ ] Task 3: <!-- Description -->
+
+## Testing Tasks
+
+- [ ] Write unit tests
+- [ ] Write integration tests
+- [ ] Manual QA verification
+
+## Documentation Tasks
+
+- [ ] Update relevant CLAUDE.md
+- [ ] Update API documentation (if applicable)

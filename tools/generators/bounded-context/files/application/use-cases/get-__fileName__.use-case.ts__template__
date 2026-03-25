@@ -1,0 +1,16 @@
+import type { I<%= className %> } from '../../domain/entities/<%= fileName %>.entity.js'
+import type { I<%= className %>Repository } from '../../domain/repositories/<%= fileName %>.repository.interface.js'
+
+export class Get<%= className %>UseCase {
+  constructor(
+    private readonly <%= propertyName %>Repository: I<%= className %>Repository,
+  ) {}
+
+  async execute(id: string): Promise<I<%= className %>> {
+    const entity = await this.<%= propertyName %>Repository.findById(id)
+    if (!entity) {
+      throw new Error('<%= className %> not found')
+    }
+    return entity
+  }
+}

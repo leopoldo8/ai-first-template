@@ -1,0 +1,5 @@
+# <%= scopedName %>
+
+## Dependency Rules
+- Check project.json tags for allowed imports
+- Export everything from `src/index.ts`
